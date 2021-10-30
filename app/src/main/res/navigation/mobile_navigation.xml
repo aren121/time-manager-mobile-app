@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_buckets">
+
+    <fragment
+        android:id="@+id/navigation_buckets"
+        android:name="pl.polsl.timemanager.ui.buckets.BucketsFragment"
+        android:label="@string/title_buckets"
+        tools:layout="@layout/fragment_buckets" />
+
+    <fragment
+        android:id="@+id/navigation_shared_buckets"
+        android:name="pl.polsl.timemanager.ui.buckets.shared.SharedBucketsFragment"
+        android:label="@string/title_shared_buckets"
+        tools:layout="@layout/fragment_shared_buckets" />
+
+    <fragment
+        android:id="@+id/navigation_bucket_action"
+        android:name="pl.polsl.timemanager.ui.buckets.BucketActionFragment"
+        android:label="@string/title_create_bucket"
+        tools:layout="@layout/fragment_bucket_action" />
+
+    <fragment
+        android:id="@+id/navigation_shared_tasks"
+        android:name="pl.polsl.timemanager.ui.sharedtasks.SharedTasksFragment"
+        android:label="@string/title_shared_tasks"
+        tools:layout="@layout/fragment_shared_tasks" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="pl.polsl.timemanager.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
