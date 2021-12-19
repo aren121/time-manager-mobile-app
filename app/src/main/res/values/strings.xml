@@ -21,4 +21,7 @@
     <string name="bucketMaxTasks">Max tasks number</string>
     <string name="saveBucket">Save</string>
     <string name="editBucketTitle">Edit bucket</string>
+    <string name="bucketDetailsTitle">Bucket details</string>
+    <string name="bucketDetailsTasksTabTitle">Tasks</string>
+    <string name="bucketDetailsDetailsTabTitle">Details</string>
 </resources>

@@ -6,8 +6,10 @@
         <entry key="..\:/Users/Andrzej/AndroidStudioProjects/TimeManager/app/src/main/res/layout/activity_main.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Andrzej/AndroidStudioProjects/TimeManager/app/src/main/res/layout/bucket_list_item.xml" value="0.2677083333333333" />
         <entry key="..\:/Users/Andrzej/AndroidStudioProjects/TimeManager/app/src/main/res/layout/fragment_bucket_action.xml" value="0.1" />
+        <entry key="..\:/Users/Andrzej/AndroidStudioProjects/TimeManager/app/src/main/res/layout/fragment_bucket_details.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Andrzej/AndroidStudioProjects/TimeManager/app/src/main/res/layout/fragment_buckets.xml" value="0.15104166666666666" />
         <entry key="..\:/Users/Andrzej/AndroidStudioProjects/TimeManager/app/src/main/res/layout/fragment_settings.xml" value="0.2677083333333333" />
+        <entry key="..\:/Users/Andrzej/AndroidStudioProjects/TimeManager/app/src/main/res/layout/fragment_task_list.xml" value="0.24947916666666667" />
       </map>
     </option>
   </component>

@@ -7,4 +7,8 @@ interface BucketRepository {
 
     fun getOwnBuckets(): Single<Result<List<Bucket>>>
 
+    fun createBucket(bucket: Bucket): Single<Result<Bucket>>
+
+    fun editBucket(bucket: Bucket): Single<Result<Bucket>>
+
 }

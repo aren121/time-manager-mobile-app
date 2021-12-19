@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_buckets.*
 import pl.polsl.timemanager.R
 import pl.polsl.timemanager.model.Bucket
 
-class BucketsFragment : Fragment(), BucketViewHolderActionListener {
+class OwnBucketsFragment : Fragment(), BucketViewHolderActionListener {
 
     private lateinit var bucketsViewModel: BucketsViewModel
     private lateinit var navController: NavController
@@ -42,6 +42,7 @@ class BucketsFragment : Fragment(), BucketViewHolderActionListener {
         }
 
         createBucketButton.setOnClickListener {
+            bucketsViewModel.onCreateBucket()
             navController.navigate(R.id.navigation_bucket_action)
         }
 
@@ -50,5 +51,10 @@ class BucketsFragment : Fragment(), BucketViewHolderActionListener {
     override fun onBucketEdit(bucket: Bucket) {
         bucketsViewModel.onEditBucket(bucket)
         navController.navigate(R.id.navigation_bucket_action)
+    }
+
+    override fun onBucketShow(bucket: Bucket) {
+        bucketsViewModel.onShowBucket(bucket)
+        navController.navigate(R.id.navigation_bucket_details)
     }
 }

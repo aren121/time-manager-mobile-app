@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_buckets"
-        android:name="pl.polsl.timemanager.ui.buckets.BucketsFragment"
+        android:name="pl.polsl.timemanager.ui.buckets.OwnBucketsFragment"
         android:label="@string/title_buckets"
         tools:layout="@layout/fragment_buckets" />
 
@@ -22,6 +22,12 @@
         android:name="pl.polsl.timemanager.ui.buckets.BucketActionFragment"
         android:label="@string/title_create_bucket"
         tools:layout="@layout/fragment_bucket_action" />
+
+    <fragment
+        android:id="@+id/navigation_bucket_details"
+        android:name="pl.polsl.timemanager.ui.buckets.details.BucketDetailsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_bucket_details" />
 
     <fragment
         android:id="@+id/navigation_shared_tasks"

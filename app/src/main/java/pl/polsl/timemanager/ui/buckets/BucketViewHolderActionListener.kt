@@ -6,4 +6,6 @@ interface BucketViewHolderActionListener {
 
     fun onBucketEdit(bucket: Bucket)
 
+    fun onBucketShow(bucket: Bucket)
+
 }

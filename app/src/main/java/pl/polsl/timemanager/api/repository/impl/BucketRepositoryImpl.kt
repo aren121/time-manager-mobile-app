@@ -15,4 +15,17 @@ class BucketRepositoryImpl : BucketRepository {
             bucketApi.getOwnBuckets().enqueue(RxCallbackImpl(it))
         }
     }
+
+    override fun createBucket(bucket: Bucket): Single<Result<Bucket>> {
+        return Single.create {
+            bucketApi.createBucket(bucket).enqueue(RxCallbackImpl(it))
+        }
+    }
+
+    override fun editBucket(bucket: Bucket): Single<Result<Bucket>> {
+        assert(bucket.idBucket != null) { "Passed no id bucket to api call" }
+        return Single.create {
+            bucketApi.editBucket(bucket, bucket.idBucket!!).enqueue(RxCallbackImpl(it))
+        }
+    }
 }

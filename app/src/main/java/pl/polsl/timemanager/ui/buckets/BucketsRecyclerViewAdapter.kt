@@ -24,6 +24,10 @@ class BucketsRecyclerViewAdapter(private var buckets: List<Bucket>,
             itemView.editButton.setOnClickListener {
                 actionListener.onBucketEdit(bucket)
             }
+
+            itemView.showButton.setOnClickListener {
+                actionListener.onBucketShow(bucket)
+            }
         }
 
         fun bind(bucket: Bucket, isOwn: Boolean) {

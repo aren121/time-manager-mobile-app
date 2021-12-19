@@ -11,12 +11,16 @@ abstract class BucketsViewModel : BaseViewModel() {
 
     abstract val editedBucket: LiveData<Bucket?>
 
+    abstract val currentBucket: LiveData<Bucket?>
+
     abstract fun init()
 
     abstract fun onEditBucket(bucket: Bucket)
 
     abstract fun onCreateBucket()
 
-    abstract fun createBucket(bucket: Bucket)
+    abstract fun onShowBucket(bucket: Bucket)
+
+    abstract fun saveBucket(bucketName: String, description: String, maxTasks: String)
 
 }
